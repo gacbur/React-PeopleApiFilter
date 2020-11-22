@@ -15,10 +15,8 @@ function App() {
 
     const response = await fetch(API)
     if (response.ok) {
-      console.log("połączono prawidłowo")
       const responseJson = await response.json()
       setUsers(responseJson.results)
-      console.log(users)
     }
     else {
       console.log("połączenie nie przebiegło prawidłowo")
