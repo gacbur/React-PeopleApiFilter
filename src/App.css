@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+*{
+    padding:0;
+    margin:0;
+    font-family: tahoma;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: white;
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-cnt button{
+    border:none;
+    cursor: pointer;
+    background-color: rebeccapurple;
+    width:6em;
+    height: 2em;
+    color:white;
+    border-radius: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app-cnt{
+    box-shadow: 0 2px 22px rgba(0,0,0,0.3);
+    border-radius: 4px;
+    padding:1.5em 1.5em;
+    margin:100px auto;
+    display: flex;
+    flex-direction: row;
+    background-color:#b2cce9;
+    color:black;
+    width:75%;
+    height:500px;
 }
 
-.App-link {
-  color: #61dafb;
+.search-section{
+    background-color: white;
+    border-right: 1.5em solid #b2cce9;
+    text-align: center;
+    padding:1em;
+    border-radius: 4px;
+    width:250px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-section input{
+    margin-top:.5em;
+}
+
+.search-section button{
+    display: block;
+    margin:0 auto;
+    margin-top:.7em;
+}
+
+.display-section{
+    background-color: white;
+    border-radius: 4px;
+    padding:2em 2em;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width:70%;
+}
+
+.user-card{
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.45);
+    border-radius: 8px;
+    height:350px;
+    padding:1em 3em;
+}
+
+.user-card + .user-card{
+    margin-left: 2em;
+}
+
+.user-profile-pic img{
+    width:160px;
+    margin-bottom: 2em;
+}
+
+.user-btn{
+    display: block;
+    width:50%;
+    margin:20px auto;
+}
+
+.overlay-btn{
+    cursor:pointer;
+    position: absolute;
+    right:40px;
+    top:40px;
+    border-radius: 50em;
+    border:1px solid white;
+    font-size: 2.1em;
+    padding:0em .3em;
+    background-color: black;
+    color:white;
+    transition: .15s ease;
+}
+
+.overlay-btn:hover{
+    transition: .15s ease;
+    background-color: rgb(39, 37, 37);
+}
+
+.modal-control p{
+    padding:.2em;
 }
